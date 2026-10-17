@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fff7f8">
+  <meta name="description" content="Una felicitación de cumpleaños para Flor, con cariño, flores y un toque de magia.">
+  <title>¡Feliz cumpleaños, Flor! ✿</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <canvas id="petalsCanvas" aria-hidden="true"></canvas>
+  <header class="site-nav">
+    <a class="brand" href="#inicio"><span class="brand-flower">✿</span> un cumpleaños para recordar</a>
+    <a class="nav-note" href="#carta">Tu carta de cumpleaños <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Hoy celebramos tu vida</p>
+        <h1>Hoy el mundo celebra<br>a alguien <em>muy especial.</em></h1>
+        <p class="hero-intro">Hoy es tu día, Dra. Flor. Que te sobren motivos para sonreír, abrazos sinceros, sueños por cumplir y momentos tan bonitos como los que tú regalas a quienes te rodean.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#carta">Abrir mi carta <span>↓</span></a>
+          <a class="text-link" href="#jardin">Ver mis flores <span>↗</span></a>
+        </div>
+        <div class="little-note"><span class="little-note-icon">♡</span><span>Un deseo bonito para una persona maravillosa.</span></div>
+      </div>
+
+      <div class="hero-art reveal" aria-label="Ilustración de Stitch con un gorrito de fiesta y un regalo">
+        <div class="art-halo"></div>
+        <div class="birthday-balloon balloon-one"><span>♥</span></div><div class="birthday-balloon balloon-two"><span>✦</span></div><div class="sparkle sparkle-a">✦</div><div class="sparkle sparkle-b">✧</div><div class="sparkle sparkle-c">✦</div>
+        <div class="floating-flower flower-a">✿</div><div class="floating-flower flower-b">✿</div>
+        <div class="stitch-card">
+          <div class="stitch-label"><span class="label-heart">♥</span> Hoy es tu día, Dra. Flor</div>
+          <svg class="stitch-svg" viewBox="0 0 360 400" role="img" aria-label="Stitch azul sonriente con bata blanca y estetoscopio rosa">
+            <defs>
+              <linearGradient id="fur" x1="0" y1="0" x2=".9" y2="1"><stop stop-color="#9de8f6"/><stop offset=".42" stop-color="#55b9e8"/><stop offset="1" stop-color="#2676bd"/></linearGradient>
+              <linearGradient id="furDark" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#398ed0"/><stop offset="1" stop-color="#174b91"/></linearGradient>
+              <linearGradient id="earInner" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffc3d0"/><stop offset="1" stop-color="#e86b9b"/></linearGradient>
+              <linearGradient id="coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0f4"/><stop offset=".65" stop-color="#ffd6e1"/><stop offset="1" stop-color="#f1a9c0"/></linearGradient>
+              <radialGradient id="cheek"><stop stop-color="#ff9db4" stop-opacity=".8"/><stop offset="1" stop-color="#ff9db4" stop-opacity="0"/></radialGradient>
+              <filter id="softShadow" x="-30%" y="-30%" width="160%" height="170%"><feDropShadow dx="0" dy="7" stdDeviation="6" flood-color="#225c91" flood-opacity=".2"/></filter>
+            </defs>
+            <g class="stitch-ear ear-left">
+              <path d="M111 112C72 48 21 18 18 69C15 112 38 157 91 169L123 143Z" fill="url(#furDark)"/>
+              <path d="M91 121C65 79 39 58 39 81C39 111 56 135 91 146Z" fill="url(#earInner)"/>
+              <path d="M45 77Q65 93 79 120" fill="none" stroke="#ffd9e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+            </g>
+            <g class="stitch-ear ear-right">
+              <path d="M249 112C288 48 339 18 342 69C345 112 322 157 269 169L237 143Z" fill="url(#furDark)"/>
+              <path d="M269 121C295 79 321 58 321 81C321 111 304 135 269 146Z" fill="url(#earInner)"/>
+              <path d="M315 77Q295 93 281 120" fill="none" stroke="#ffd9e1" stroke-width="3" stroke-linecap="round" opacity=".65"/>
+            </g>
+            <ellipse cx="180" cy="350" rx="103" ry="18" fill="#a4c8df" opacity=".28"/>
+            <g class="stitch-body" filter="url(#softShadow)">
+              <path d="M117 235Q94 249 88 298L77 351Q111 371 143 352L157 300H203L217 352Q249 371 283 351L272 298Q266 249 243 235Z" fill="url(#fur)"/>
+              <ellipse cx="111" cy="350" rx="37" ry="20" fill="url(#furDark)"/>
+              <ellipse cx="249" cy="350" rx="37" ry="20" fill="url(#furDark)"/>
+              <ellipse cx="111" cy="347" rx="25" ry="11" fill="#77c9eb"/>
+              <ellipse cx="249" cy="347" rx="25" ry="11" fill="#77c9eb"/>
+              <path d="M125 223Q180 210 235 223L260 342Q221 359 180 349Q139 359 100 342Z" fill="url(#coat)" stroke="#e8a8bd" stroke-width="2"/>
+              <path d="M137 226L180 280L151 297L116 238Z" fill="#ffe3eb" stroke="#e8a8bd" stroke-width="1.5"/>
+              <path d="M223 226L180 280L209 297L244 238Z" fill="#fff2f5" stroke="#e8a8bd" stroke-width="1.5"/>
+              <path d="M180 280V348" stroke="#c9d8e7" stroke-width="2"/>
+              <path d="M117 260L145 276L134 292L106 276Z" fill="#fff7f9" stroke="#e8a8bd"/>
+              <path d="M243 260L215 276L226 292L254 276Z" fill="#fff7f9" stroke="#e8a8bd"/>
+              <g class="stethoscope">
+                <path d="M143 246C137 281 150 304 180 307C210 304 223 281 217 246" fill="none" stroke="#df668d" stroke-width="7" stroke-linecap="round"/>
+                <path d="M180 306V321" stroke="#df668d" stroke-width="7" stroke-linecap="round"/>
+                <circle cx="180" cy="328" r="12" fill="#f8a0ba" stroke="#d6537c" stroke-width="3"/>
+                <circle cx="180" cy="328" r="5" fill="#fff0f5"/>
+              </g>
+              <path d="M108 280Q92 288 91 312" fill="none" stroke="#3b8dcc" stroke-width="16" stroke-linecap="round"/>
+              <path d="M252 280Q268 288 269 312" fill="none" stroke="#3b8dcc" stroke-width="16" stroke-linecap="round"/>
+            </g>
+            <g class="stitch-head" filter="url(#softShadow)">
+              <path d="M111 117C111 76 142 53 180 53C218 53 249 76 249 117L244 181C239 226 211 251 180 251C149 251 121 226 116 181Z" fill="url(#fur)"/>
+              <path d="M118 127C128 88 153 74 180 74C207 74 232 88 242 127" fill="none" stroke="#b8f1fb" stroke-width="7" opacity=".45" stroke-linecap="round"/>
+              <ellipse cx="146" cy="157" rx="34" ry="40" fill="#effcff"/>
+              <ellipse cx="214" cy="157" rx="34" ry="40" fill="#effcff"/>
+              <ellipse class="eye eye-left" cx="151" cy="161" rx="17" ry="24" fill="#172b43"/>
+              <ellipse class="eye eye-right" cx="209" cy="161" rx="17" ry="24" fill="#172b43"/>
+              <ellipse cx="156" cy="152" rx="6" ry="8" fill="#fff"/>
+              <ellipse cx="214" cy="152" rx="6" ry="8" fill="#fff"/>
+              <circle cx="146" cy="170" r="2.5" fill="#fff" opacity=".8"/><circle cx="204" cy="170" r="2.5" fill="#fff" opacity=".8"/>
+              <ellipse cx="128" cy="193" rx="24" ry="14" fill="url(#cheek)"/><ellipse cx="232" cy="193" rx="24" ry="14" fill="url(#cheek)"/>
+              <path d="M164 190Q180 181 196 190Q193 207 180 207Q167 207 164 190Z" fill="#225b8c"/>
+              <path d="M151 211Q180 237 209 211Q203 239 180 241Q157 239 151 211Z" fill="#143c66"/>
+              <path d="M160 213Q180 222 200 213Q194 231 180 231Q166 231 160 213Z" fill="#ff9eb4"/>
+              <path d="M180 215V228" stroke="#d96588" stroke-width="2" stroke-linecap="round"/>
+              <path d="M124 118Q141 102 158 111" fill="none" stroke="#b9f1fb" stroke-width="4" stroke-linecap="round" opacity=".7"/>
+            </g>
+            <g class="party-hat">
+              <path d="M130 105L142 65L158 77L176 35L195 75L217 61L231 105Q180 124 130 105Z" fill="#f4b6cc" stroke="#d98aa9" stroke-width="2"/>
+              <path d="M176 47L176 105" stroke="#fff1f5" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="176" cy="36" r="7" fill="#e6c37b"/><circle cx="147" cy="79" r="4" fill="#fff8fb"/><circle cx="205" cy="83" r="4" fill="#fff8fb"/>
+            </g>
+          </svg>
+          <div class="stitch-caption"><span>¡Feliz cumple!</span><span>Dra. Flor, hoy brillan tus sueños ♡</span></div>
+        </div>
+        <div class="art-caption">Un abrazo azul para una cumpleañera increíble.</div>
+      </div>
+      <div class="scroll-cue"><span></span> sigue leyendo</div>
+    </section>
+
+    <section class="letter-section section-wrap" id="carta">
+      <div class="section-kicker reveal">01 / una carta para tu cumpleaños</div>
+      <article class="letter-card reveal">
+        <div class="letter-top"><span class="letter-stamp">✿</span><span class="letter-date">Con todo mi cariño, Joss</span></div>
+        <h2>Dra. <em>Flor,</em></h2>
+        <div class="letter-copy">
+          <p>Hoy celebramos tu vida, tu forma de ser y todo lo bonito que haces sentir a las personas que tienen la suerte de conocerte. Ojalá este nuevo año te sorprenda con momentos inolvidables, cariño sincero y muchas razones para sonreír.</p>
+          <p>Muchas gracias por su linda amistad, su amor incondicional, y esa gran sensatez en todo el tiempo que la conocí, además de esos lindos y no tan lindos momentos que llegamos a compartir</p>
+          <p>Deseo que nunca te falten aventuras que te emocionen, personas que te abracen fuerte, metas que te ilusionen y días tranquilos en los que puedas disfrutar de todo lo que has logrado.</p>
+          <p class="letter-highlight">Que cada deseo que pidas al soplar las velitas encuentre su camino para hacerse realidad. ✨</p>
+          <p>Que este nuevo capítulo llegue cargado de salud, amor, viajes bonitos, sorpresas, risas y sueños cumplidos. Hoy y siempre, mereces cosas preciosas.</p>
+        </div>
+        <div class="letter-signoff"><span>Con muchísimo cariño, Joss</span><strong>¡feliz cumpleaños, Dra. Flor! <b>♥</b></strong></div>
+        <span class="letter-watermark">F</span>
+      </article>
+    </section>
+
+    <section class="garden-section section-wrap" id="jardin">
+      <div class="garden-heading reveal">
+        <div class="section-kicker">02 / flores para celebrar tu día</div>
+        <h2>Un ramo para ti,<br><em>hecho de buenos deseos.</em></h2>
+        <p>Que estas flores te recuerden lo especial que eres y todo lo bonito que mereces.</p>
+      </div>
+      <div class="rose-grid">
+        <article class="rose-card reveal">
+          <div class="rose-art rose-red">
+            <svg viewBox="0 0 240 290" role="img" aria-label="Rosa roja con hojas verdes">
+              <defs><linearGradient id="stem1" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#174b32"/><stop offset=".5" stop-color="#4e9a62"/><stop offset="1" stop-color="#1f623d"/></linearGradient><radialGradient id="red1" cx=".35" cy=".25" r=".85"><stop stop-color="#ff9aab"/><stop offset=".4" stop-color="#e82d52"/><stop offset=".78" stop-color="#a50935"/><stop offset="1" stop-color="#590d27"/></radialGradient><linearGradient id="red2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ff758e"/><stop offset="1" stop-color="#9d1035"/></linearGradient></defs>
+              <path d="M121 151C116 191 130 229 118 278" fill="none" stroke="url(#stem1)" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 220Q77 183 57 206Q77 239 120 229Z" fill="#2f7c49"/><path d="M120 220Q85 211 61 207" fill="none" stroke="#79b879" stroke-width="2"/>
+              <path d="M123 244Q164 206 185 228Q164 260 123 253Z" fill="#246d40"/><path d="M126 247Q157 235 181 229" fill="none" stroke="#78b77b" stroke-width="2"/>
+              <path d="M93 145Q112 162 120 150Q129 164 148 145L137 170L103 170Z" fill="#28683c"/>
+              <g class="bloom">
+                <path d="M120 151C85 150 58 124 72 91C81 68 105 67 120 86C139 60 173 73 177 101C184 130 151 152 120 151Z" fill="url(#red1)"/>
+                <path d="M77 112C52 82 76 50 105 63C124 72 127 97 119 123C104 142 88 131 77 112Z" fill="url(#red2)"/>
+                <path d="M163 113C190 83 165 52 137 64C117 73 115 98 123 123C138 143 153 132 163 113Z" fill="url(#red1)"/>
+                <path d="M89 100C91 72 119 65 137 84C153 101 140 127 119 135C101 129 86 118 89 100Z" fill="#c61640"/>
+                <path d="M106 94C103 75 128 70 140 87C151 104 132 121 118 119C105 116 100 104 106 94Z" fill="#f45a75"/>
+                <path d="M117 91C127 81 143 92 137 104C133 112 119 112 117 102C116 98 120 95 124 97" fill="none" stroke="#ffb0bd" stroke-width="3" stroke-linecap="round"/>
+                <path d="M82 91Q86 75 100 73" fill="none" stroke="#ffb7c2" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+                <path d="M147 82Q161 89 160 105" fill="none" stroke="#ff8499" stroke-width="2.5" stroke-linecap="round" opacity=".75"/>
+              </g>
+            </svg>
+          </div>
+          <div class="rose-info"><span class="rose-number">01</span><h3>Alegría y valentía</h3><p>Que siempre encuentres razones para reír y perseguir tus sueños.</p></div>
+        </article>
+        <article class="rose-card reveal">
+          <div class="rose-art rose-pink">
+            <svg viewBox="0 0 240 290" role="img" aria-label="Rosa rosa pastel con hojas verdes">
+              <defs><linearGradient id="stem2" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#174b32"/><stop offset=".5" stop-color="#4e9a62"/><stop offset="1" stop-color="#1f623d"/></linearGradient><radialGradient id="pink1" cx=".32" cy=".22" r=".9"><stop stop-color="#fff1f4"/><stop offset=".35" stop-color="#ffb0c5"/><stop offset=".72" stop-color="#e96d99"/><stop offset="1" stop-color="#9f365f"/></radialGradient><linearGradient id="pink2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe2eb"/><stop offset="1" stop-color="#d84e83"/></linearGradient></defs>
+              <path d="M121 151C116 191 130 229 118 278" fill="none" stroke="url(#stem2)" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 220Q77 183 57 206Q77 239 120 229Z" fill="#347e4c"/><path d="M120 220Q85 211 61 207" fill="none" stroke="#80bd82" stroke-width="2"/>
+              <path d="M123 244Q164 206 185 228Q164 260 123 253Z" fill="#246d40"/><path d="M126 247Q157 235 181 229" fill="none" stroke="#78b77b" stroke-width="2"/>
+              <path d="M93 145Q112 162 120 150Q129 164 148 145L137 170L103 170Z" fill="#28683c"/>
+              <g class="bloom">
+                <path d="M120 151C85 150 58 124 72 91C81 68 105 67 120 86C139 60 173 73 177 101C184 130 151 152 120 151Z" fill="url(#pink1)"/>
+                <path d="M77 112C52 82 76 50 105 63C124 72 127 97 119 123C104 142 88 131 77 112Z" fill="url(#pink2)"/>
+                <path d="M163 113C190 83 165 52 137 64C117 73 115 98 123 123C138 143 153 132 163 113Z" fill="url(#pink1)"/>
+                <path d="M89 100C91 72 119 65 137 84C153 101 140 127 119 135C101 129 86 118 89 100Z" fill="#ec82a7"/>
+                <path d="M106 94C103 75 128 70 140 87C151 104 132 121 118 119C105 116 100 104 106 94Z" fill="#ffd4e0"/>
+                <path d="M117 91C127 81 143 92 137 104C133 112 119 112 117 102C116 98 120 95 124 97" fill="none" stroke="#d65c8b" stroke-width="3" stroke-linecap="round"/>
+                <path d="M82 91Q86 75 100 73" fill="none" stroke="#fff3f6" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+              </g>
+            </svg>
+          </div>
+          <div class="rose-info"><span class="rose-number">02</span><h3>Amor del bonito</h3><p>Que recibas todo el cariño que das, multiplicado por mil.</p></div>
+        </article>
+        <article class="rose-card reveal">
+          <div class="rose-art rose-cream">
+            <svg viewBox="0 0 240 290" role="img" aria-label="Rosa color marfil con hojas verdes">
+              <defs><linearGradient id="stem3" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#174b32"/><stop offset=".5" stop-color="#4e9a62"/><stop offset="1" stop-color="#1f623d"/></linearGradient><radialGradient id="cream1" cx=".32" cy=".22" r=".9"><stop stop-color="#fff"/><stop offset=".42" stop-color="#fff3d9"/><stop offset=".8" stop-color="#e8d3a1"/><stop offset="1" stop-color="#ad8b54"/></radialGradient><linearGradient id="cream2" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fffdf4"/><stop offset="1" stop-color="#ddc58d"/></linearGradient></defs>
+              <path d="M121 151C116 191 130 229 118 278" fill="none" stroke="url(#stem3)" stroke-width="7" stroke-linecap="round"/>
+              <path d="M120 220Q77 183 57 206Q77 239 120 229Z" fill="#347e4c"/><path d="M120 220Q85 211 61 207" fill="none" stroke="#80bd82" stroke-width="2"/>
+              <path d="M123 244Q164 206 185 228Q164 260 123 253Z" fill="#246d40"/><path d="M126 247Q157 235 181 229" fill="none" stroke="#78b77b" stroke-width="2"/>
+              <path d="M93 145Q112 162 120 150Q129 164 148 145L137 170L103 170Z" fill="#28683c"/>
+              <g class="bloom">
+                <path d="M120 151C85 150 58 124 72 91C81 68 105 67 120 86C139 60 173 73 177 101C184 130 151 152 120 151Z" fill="url(#cream1)"/>
+                <path d="M77 112C52 82 76 50 105 63C124 72 127 97 119 123C104 142 88 131 77 112Z" fill="url(#cream2)"/>
+                <path d="M163 113C190 83 165 52 137 64C117 73 115 98 123 123C138 143 153 132 163 113Z" fill="url(#cream1)"/>
+                <path d="M89 100C91 72 119 65 137 84C153 101 140 127 119 135C101 129 86 118 89 100Z" fill="#f0dfb8"/>
+                <path d="M106 94C103 75 128 70 140 87C151 104 132 121 118 119C105 116 100 104 106 94Z" fill="#fff9e9"/>
+                <path d="M117 91C127 81 143 92 137 104C133 112 119 112 117 102C116 98 120 95 124 97" fill="none" stroke="#c4a66c" stroke-width="3" stroke-linecap="round"/>
+                <path d="M82 91Q86 75 100 73" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+              </g>
+            </svg>
+          </div>
+          <div class="rose-info"><span class="rose-number">03</span><h3>Nuevos comienzos</h3><p>Que este año nuevo de vida esté lleno de sorpresas preciosas.</p></div>
+        </article>
+      </div>
+      <div class="finale reveal">
+        <div class="finale-flower">✿</div>
+        <p class="finale-overline">Un deseo para tu nuevo año</p>
+        <h2>Que la vida te regale<br><em>mil motivos para sonreír.</em></h2>
+        <p>¡Feliz cumpleaños, Dra. Flor!</p>
+        <button class="button button-primary magic-button" id="magicButton" type="button">Pedir un deseo por Flor <span>✧</span></button>
+      </div>
+    </section>
+  </main>
+  <footer><span>Hecho con cariño para celebrar a Flor.</span><span>✿</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
